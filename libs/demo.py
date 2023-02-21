@@ -2,7 +2,7 @@ import ctypes
 from pathlib import Path
 
 
-LIB_PATH = Path(__file__).parent / 'demolib.so'
+LIB_PATH = Path(__file__).parent / 'libdemo.so'
 demolib_c = ctypes.PyDLL(str(LIB_PATH))
 
 
