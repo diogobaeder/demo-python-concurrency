@@ -2,10 +2,10 @@ import time
 from concurrent.futures import ThreadPoolExecutor, wait
 from contextlib import contextmanager
 
-from libs.demolib_wrapper import force_sleep
+from libs.demo import force_sleep
 
 
-SLEEP_SECS = 3
+SLEEP_SECS = 1
 THREADS = 4
 
 

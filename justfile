@@ -1,9 +1,9 @@
 compile:
-  gcc -c -Wall -Werror -fpic -o libs/demolib.o libs/demolib.c
-  gcc -shared -o libs/demolib.so libs/demolib.o
+  gcc -c -Wall -Werror -fpic -o libs/libdemo.o libs/libdemo.c
+  gcc -shared -o libs/demolib.so libs/libdemo.o
 
 check-call:
-  python libs/demolib_wrapper.py
+  python libs/demo.py
 
 check-concurrency:
   python check_concurrency.py

@@ -18,5 +18,5 @@ def force_sleep(amount: int) -> None:
 
 if __name__ == '__main__':
     print('In Python, will call force_sleep from the C lib')
-    force_sleep(3)
+    force_sleep(1)
     print('Done calling the C lib')
