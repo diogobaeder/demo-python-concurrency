@@ -5,5 +5,5 @@ compile:
 check-call:
   python libs/demo.py
 
-check-concurrency:
-  python check_concurrency.py
+check-sleeps:
+  python check_sleeps.py
