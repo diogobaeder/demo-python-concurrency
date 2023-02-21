@@ -3,4 +3,7 @@ compile:
   gcc -shared -o libs/demolib.so libs/demolib.o
 
 check-call:
-  python libs/demolib.py
+  python libs/demolib_wrapper.py
+
+check-concurrency:
+  python check_concurrency.py
