@@ -37,5 +37,5 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    print('Starting to check concurrency')
+    print('Starting to check sleeps')
     main()
