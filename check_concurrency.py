@@ -2,7 +2,7 @@ import time
 from concurrent.futures import ThreadPoolExecutor, wait
 from contextlib import contextmanager
 
-from libs.demo import force_sleep
+from libs.demo import libdemo
 
 
 SLEEP_SECS = 1
@@ -30,7 +30,7 @@ def main() -> None:
     with timing(f'sleeping in C in {THREADS} threads'):
         with ThreadPoolExecutor(max_workers=THREADS) as executor:
             futures = [
-                executor.submit(force_sleep, SLEEP_SECS)
+                executor.submit(libdemo.force_sleep, SLEEP_SECS)
                 for _ in range(THREADS)
             ]
             wait(futures)
